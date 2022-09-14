@@ -2,7 +2,7 @@
 Um breve passo a passo de como criar partições encriptadas para proteger seus arquivos pessoais de acessos indevidos.
 LVM on LUKS
 
-# 1. Crianco um container temporário para ser encriptado:
+# 1. Criando um container temporário para ser encriptado:
 ```
 cryptsetup open --type plain /dev/sdb container -> Cria o container no disco /dev/sdb para listar o discos e selecionar o que você deseja utilize o comando fdisk -l
 dd if=/dev/zero of=/dev/mapper/container -> preenchendo o disco com zeros (forma segura de formatar um disco), pode ser com dados aleatorios também.
