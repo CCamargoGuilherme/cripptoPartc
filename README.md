@@ -2,7 +2,7 @@
 Um breve passo a passo de como criar partições encriptadas para proteger seus arquivos pessoais de acessos indevidos.
 LVM on LUKS
 
-# cryptsetup open --type plain /dev/sdb container
+## cryptsetup open --type plain /dev/sdb container
 # dd if=/dev/zero of=/dev/mapper/container
 # cryptsetup close container
 
